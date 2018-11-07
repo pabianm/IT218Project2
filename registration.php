@@ -56,6 +56,6 @@ else
 
 //inserts data into the table
 $s = "insert into accounts values ( id , '$email', '$fname', '$lname', '$bday', '$pass' ) ";
-($t = mysqli_query($db, $s1 ) ) or die (mysqli_error($db));
+($t = mysqli_query($db, $s ) ) or die (mysqli_error($db));
 redirect ("Successfully registered. Redirecting to your profile.", "profile.html");
 ?>
