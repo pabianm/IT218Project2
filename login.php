@@ -48,7 +48,7 @@ function redirect ($message, $url) {
 if (strpos($email, "@") !==false)
     isempty($email, "Email");
 else
-    redirect("Email is not valid. Please enter a valid email<br>", "login.html");
+    redirect("Email is not valid. Please enter a valid email. Redirecting you to the login page in 10 seconds.<br>", "login.html");
 
 //checks if the password is valid due to constraints.
 if (strlen($pass)<8)
@@ -58,7 +58,7 @@ else
 
 //checks if the user is using valid credentials. If so, logs the user into the profile page.
 if (auth($email, $pass) == true)
-    redirect("Your credentials are correct. Redirecting you to your profile in 10 seconds.", "profile.html");
+    redirect("Your credentials are correct. Redirecting you to your profile in 10 seconds.", "profile.php?email=".$email);
 else {
     redirect("Your credentials are inncorrect. Please try again. Redirecting you to the login page in 10 seconds.", "login.html");
 }

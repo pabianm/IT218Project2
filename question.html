@@ -6,23 +6,28 @@
         .F1 {width: 20%; background:#00aa00; color:white; margin:auto; box-shadow: 5px 5px 5px grey; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px grey}
     </style>
 
+
+    </fieldset>
     <fieldset class="F1"> <!-- creates the fieldset based on the CSS style code -->
 
+        Enter email here<br> <!-- This section is for the email text box -->
+        <input type=email name="email" placeholder="Enter your email" autocomplete="off" autofocus required>
+        <br>
 
-    Question name<br> <!-- This section is for the question name -->
-    <input type=text name="qName" placeholder="What is your question?" autocomplete="off" autofocus required>
-    <br>
+        Question name<br> <!-- This section is for the question name -->
+        <input type=text name="qName" placeholder="What is your question?" autocomplete="off" autofocus required>
+        <br>
 
-    Question body<br> <!-- This section is for the question body -->
-    <textarea rows="4" cols="50" name="qBody" form_id="qForm">
+        Question body<br> <!-- This section is for the question body -->
+        <textarea rows="4" cols="50" name="qBody" form_id="qForm">
         </textarea>
-    <br>
+        <br>
 
-    Question Skills<br> <!-- This section is for the question skills -->
-    <input type=text name="qSkills" placeholder="Enter Skills (At least 2)" autocomplete="off" required>
-    <br>
+        Question Skills<br> <!-- This section is for the question skills -->
+        <input type=text name="qSkills" placeholder="Enter Skills (At least 2)" autocomplete="off" required>
+        <br>
 
-    <br>
-    <input type=submit > <!-- submit button -->
+        <br>
+        <input type=submit> <!-- submit button -->
     </fieldset>
 </form>
