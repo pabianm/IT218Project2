@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> <!-- sets the charset to UTF-8 -->
+<form action="question.php" id="qForm"> <!-- links the html form to the main php code -->
+    <style>
+        #amount ,#number {display: none; }
+        .F1 {width: 20%; background:#00aa00; color:white; margin:auto; box-shadow: 5px 5px 5px grey; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px grey}
+    </style>
+
+    <fieldset class="F1"> <!-- creates the fieldset based on the CSS style code -->
+
+
+    Question name<br> <!-- This section is for the question name -->
+    <input type=text name="qName" placeholder="What is your question?" autocomplete="off" autofocus required>
+    <br>
+
+    Question body<br> <!-- This section is for the question body -->
+    <textarea rows="4" cols="50" name="qBody" form_id="qForm">
+        </textarea>
+    <br>
+
+    Question Skills<br> <!-- This section is for the question skills -->
+    <input type=text name="qSkills" placeholder="Enter Skills (At least 2)" autocomplete="off" required>
+    <br>
+
+    <br>
+    <input type=submit > <!-- submit button -->
+    </fieldset>
+</form>
