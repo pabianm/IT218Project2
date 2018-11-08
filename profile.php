@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"> <!-- sets the charset to UTF-8 -->
+<head>
+    <meta charset="utf-8">
+    <title>Question</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 <form action="question.html" id="qForm"> <!-- links the html form to the main php code -->
-    <style>
-        #amount ,#number {display: none; }
-        .F1 {width: 20%; background:#00aa00; color:white; margin:auto; box-shadow: 5px 5px 5px grey; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 2px 2px grey}
-    </style>
 
 
     </fieldset>
